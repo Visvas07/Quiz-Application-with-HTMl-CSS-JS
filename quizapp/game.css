@@ -1,0 +1,76 @@
+.choice-container{
+    display: flex;
+    margin-bottom: 0.1rem;
+    width: 100%;
+    font-size: 1.9rem;
+    border:0.1rem solid rgb(0, 0, 0,0.5);
+    background-color: white;
+}
+.choice-container:hover{
+    cursor:pointer;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 124, 240,0.4);
+      transform: translate(-0.2rem);
+      transition: transform 150ms;
+}
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: #bbccff;
+    color: #000;
+}
+.choice-text{
+    padding: 1.5rem;
+    width:100%;
+}
+
+.correct{
+    background-color: #28a780;
+}
+
+.incorrect{
+    background-color: #dc3453;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+.hud-main-text{
+    text-align: center;
+}
+
+#progress-bar{
+    width: 20rem;
+    height: 4rem;
+    border: 0.4rem solid #000000;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull{
+    height: 3.4rem;
+    background-color: #000000;
+    width: 0%;
+
+}
+
+#loader{
+    border:1.8rem solid #fff ;
+    border-radius: 50%;
+    border-top: 1.6rem solid #000;
+    width: 14rem;
+    height: 14rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
